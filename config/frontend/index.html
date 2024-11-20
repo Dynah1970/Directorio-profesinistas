@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Consulta</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form id="appointment-form" class="form-container">
+    <h2>Información de la Consulta</h2>
+
+    <label for="name">Nombre completo:</label>
+    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required />
+
+    <label for="profession">Profesional a consultar:</label>
+    <select id="profession" name="profession" required>
+      <option value="">Selecciona...</option>
+      <option value="medico">Médico</option>
+      <option value="contador">Contador</option>
+      <option value="abogado">Abogado</option>
+    </select>
+
+    <label for="reason">Razón de la visita:</label>
+    <textarea id="reason" name="reason" placeholder="Describe brevemente tu motivo" required></textarea>
+
+    <label for="contact">Teléfono de contacto:</label>
+    <input type="tel" id="contact" name="contact" placeholder="Ej. 55-1234-5678" required />
+
+    <label for="preference">Preferencia de consulta:</label>
+    <select id="preference" name="preference" required>
+      <option value="">Selecciona...</option>
+      <option value="presencial">Presencial</option>
+      <option value="virtual">Virtual</option>
+    </select>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
